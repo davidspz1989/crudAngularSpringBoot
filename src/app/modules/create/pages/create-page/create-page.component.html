@@ -1,0 +1,20 @@
+<div class="container">
+    
+    <div class="col-md-4">
+        <form (ngSubmit)="onSubmit()"  #personForm="ngForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre usuario</label>
+              <input type="text" class="form-control" id="name" name="name" [(ngModel)]="persons.name" #name="ngModel">
+            </div>
+            <div class="mb-3">
+              <label for="lastName" class="form-label">Apellido usuario</label>
+              <input type="text" class="form-control" id="lastName" name="lastName" [(ngModel)]="persons.lastName" #name="ngModel">
+            </div>
+            <div class="mb-3">
+              <label for="userAge" class="form-label">Edad Usuario</label>
+              <input type="text" class="form-control" id="userAge" name="userAge" [(ngModel)]="persons.age" #name="ngModel">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+</div>
